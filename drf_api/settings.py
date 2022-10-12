@@ -67,7 +67,7 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
-if 'CLIENT_ORIGIN' in os.enviorn:
+if 'CLIENT_ORIGIN' in os.environ:
     CORS_ALLOWED_ORIGINS = [
         os.environ.get('CLIENT_ORIGIN')
     ]
@@ -96,7 +96,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
-    'corsheaders'
+    'corsheaders',
     'cloudinary',
     'profiles',
     'posts',
